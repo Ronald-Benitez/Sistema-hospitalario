@@ -6,7 +6,7 @@ import NavbarBase from "../components/navbars/navbar";
 import HandleFiles from "./handleFiles";
 import Hotbar from "./hotbar";
 
-async function Usuarios() {
+async function Farmacia() {
     checkUserRole(["Administración", "Farmacia"])
 
 
@@ -23,4 +23,4 @@ async function Usuarios() {
     );
 }
 
-export default Usuarios;
+export default Farmacia;

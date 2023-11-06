@@ -6,7 +6,7 @@ import DoctorsTable from "./table";
 import checkUserRole from "../middlewares/check-user-role";
 import NavbarBase from "../components/navbars/navbar";
 
-async function Usuarios() {
+async function Doctores() {
     checkUserRole(["Administración"])
 
     const supabase = createServerComponentClient({ cookies });
@@ -26,4 +26,4 @@ async function Usuarios() {
     );
 }
 
-export default Usuarios;
+export default Doctores;
