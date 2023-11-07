@@ -4,10 +4,10 @@ import checkUserRole from "../middlewares/check-user-role";
 import NavbarBase from "../components/navbars/navbar";
 import Hotbar from "./hotbar";
 
+export const dynamic = 'force-dynamic'
+
 async function Farmacia() {
     checkUserRole(["Administración", "Farmacia"])
-
-
 
     return (
         <>

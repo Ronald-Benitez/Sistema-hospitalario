@@ -10,7 +10,8 @@ import Secretaria from "./secretaria";
 import Farmacia from "./farmacia";
 import { type User } from "../interfaces/user";
 
-function page() {
+
+ function page() {
     const router = useRouter()
     const [user, setUser] = useState<User | null>(null)
 

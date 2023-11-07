@@ -9,6 +9,8 @@ import EspecialitiesTable from "./table";
 import checkUserRole from "../middlewares/check-user-role";
 import NavbarBase from "../components/navbars/navbar";
 
+export const dynamic = 'force-dynamic'
+
 async function Especialidades() {
     checkUserRole(["Administración"])
 
