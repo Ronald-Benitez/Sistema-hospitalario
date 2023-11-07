@@ -1,6 +1,6 @@
 import NavbarBase from "@/app/components/navbars/navbar"
 
-function page() {
+export default function Home() {
 
   return (
     <div>
@@ -10,4 +10,3 @@ function page() {
   )
 }
 
-export default page
