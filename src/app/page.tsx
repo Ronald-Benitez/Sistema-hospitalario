@@ -1,8 +1,6 @@
-"use server"
-
 import NavbarBase from "@/app/components/navbars/navbar"
 
-async function page() {
+function page() {
 
   return (
     <div>
