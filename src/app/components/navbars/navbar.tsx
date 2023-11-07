@@ -14,14 +14,6 @@ import { GetLoginCookies, RemoveLoginCookies, SetLoginCookies } from "@/app/acti
 import { type User } from "@/app/interfaces/user";
 import UsuarioSuspendido from "../login/usuario-suspendido";
 
-export async function getServerSideProps() {
-    return {
-      props: {
-        dynamic: "force-dynamic",
-      },
-    };
-  }
-
 export default function NavbarBase() {
     const [user, setUser] = useState<User | null>(null);
     const supabase = createClientComponentClient();

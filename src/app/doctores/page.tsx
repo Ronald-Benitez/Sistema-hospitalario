@@ -1,4 +1,3 @@
-"use server"
 
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from 'next/headers';
@@ -8,13 +7,7 @@ import DoctorsTable from "./table";
 import checkUserRole from "../middlewares/check-user-role";
 import NavbarBase from "../components/navbars/navbar";
 
-export async function getServerSideProps() {
-    return {
-      props: {
-        dynamic: "force-dynamic",
-      },
-    };
-  }
+export const dynamic = 'force-dynamic'
 
 async function Doctores() {
     checkUserRole(["Administración"])

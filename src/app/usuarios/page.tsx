@@ -1,4 +1,4 @@
-"use server"
+
 
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from 'next/headers';
@@ -8,6 +8,8 @@ import AddUser from "./add";
 import UsuariosTable from "./table";
 import checkUserRole from "../middlewares/check-user-role";
 import NavbarBase from "../components/navbars/navbar";
+
+export const dynamic = 'force-dynamic'
 
 async function Usuarios() {
     checkUserRole(["Administración"])

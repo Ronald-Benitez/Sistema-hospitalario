@@ -1,16 +1,10 @@
-"use server"
+
 
 import checkUserRole from "../middlewares/check-user-role";
 import NavbarBase from "../components/navbars/navbar";
 import Hotbar from "./hotbar";
 
-export async function getServerSideProps() {
-    return {
-      props: {
-        dynamic: "force-dynamic",
-      },
-    };
-  }
+export const dynamic = 'force-dynamic'
 
 async function Farmacia() {
     checkUserRole(["Administración", "Farmacia"])
