@@ -38,7 +38,7 @@ const Pagination: React.FC<PaginationProps> = ({
                     <IconArrowLeft size={"18"} />
                 </Button>
                 <Button disabled size="sm">
-                    <span className="sr-only">Current page</span>
+                    <span className="sr-only">Página actual </span>
                     <span className="font-medium text-gray-900">{currentPage}</span>
                 </Button>
                 <Button
