@@ -1,12 +1,6 @@
-"use client"
-
 import NavbarBase from "@/app/components/navbars/navbar"
-import checkUserRole from "@/app/middlewares/check-user-role"
-
 
 function page() {
-
-  checkUserRole(["NA"]);
 
   return (
     <div>
