@@ -4,15 +4,15 @@ import React, { useState, useEffect } from "react";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { IconTrashFilled } from "@tabler/icons-react";
 import toast, { Toaster } from "react-hot-toast";
+import { Button } from "@nextui-org/react";
 
-import Pagination from "@/app/components/utils/pagination";
+import Pagination from "../components/utils/pagination";
 import SearchFilter from "../components/utils/filtering";
 import moment from "moment/moment";
 import { type Speciality } from "../interfaces/specialities";
 import AddSpeciality from "./add";
 import Confirm from "../components/utils/confirm";
 import { deleteEspeciality } from "../actions/specialities";
-import { Button } from "@nextui-org/react";
 
 const ITEMS_PER_PAGE = 5;
 
