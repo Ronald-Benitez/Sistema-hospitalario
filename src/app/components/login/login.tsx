@@ -8,7 +8,7 @@ import { SetLoginCookies, RemoveLoginCookies } from "../../actions/cookies";
 import { useRouter } from 'next/navigation'
 
 import UsuarioSuspendido from "./usuario-suspendido";
-import { type User } from "@/app/interfaces/user";
+import { type User } from "../../interfaces/user";
 
 export default function Login() {
     const [userLocal, setUserLocal] = useState<User | null>(null);
