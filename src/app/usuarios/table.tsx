@@ -31,6 +31,10 @@ export default function UsuariosTable({ usuarios: props }: { usuarios: User[] })
         });
     }, []);
 
+    useEffect(() => {
+        setUsuarios(props);
+    }, [props]);
+
 
     supabase.channel('custom-all-channel')
         .on(
@@ -79,7 +83,7 @@ export default function UsuariosTable({ usuarios: props }: { usuarios: User[] })
             return usuario.tipo.toLowerCase().includes(searchTerm.toLowerCase());
         }
         return true;
-    }).toSorted((a, b) => {
+    }).sort((a, b) => {
         return a.nombres.localeCompare(b.nombres);
     });
 

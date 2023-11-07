@@ -1,13 +1,16 @@
+"use client";
 
+import { useState, useEffect } from "react";
 
 import checkUserRole from "../middlewares/check-user-role";
 import NavbarBase from "../components/navbars/navbar";
 import Hotbar from "./hotbar";
 
-export const dynamic = 'force-dynamic'
+function Farmacia() {
 
-async function Farmacia() {
-    checkUserRole(["Administración", "Farmacia"])
+    useEffect(() => {
+        checkUserRole(["Administración", "Farmacia"])
+    }, []);
 
     return (
         <>

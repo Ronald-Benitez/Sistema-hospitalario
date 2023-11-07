@@ -24,6 +24,10 @@ const DoctorsTable = ({ data }: { data: DoctorWithUser[] }) => {
 
     const supabase = createClientComponentClient();
 
+    useEffect(() => {
+        setDoctors(data);
+    }, [data]);
+
     const getData = async () => {
         const data = await getDoctors();
         if (!data) return;
@@ -75,7 +79,7 @@ const DoctorsTable = ({ data }: { data: DoctorWithUser[] }) => {
             default:
                 return true;
         }
-    }).toSorted((a, b) => {
+    }).sort((a, b) => {
         return a.usuario.nombres.localeCompare(b.usuario.nombres);
     });
 

@@ -26,6 +26,10 @@ export default function SpecialtiesTable({ data }: { data: Speciality[] }) {
 
     const supabase = createClientComponentClient();
 
+    useEffect(() => {
+        setSpecialties(data);
+    }, [data]);
+
     supabase.channel('custom-all-channel')
         .on(
             'postgres_changes',
@@ -70,7 +74,7 @@ export default function SpecialtiesTable({ data }: { data: Speciality[] }) {
             return specialty.nombre.toLowerCase().includes(searchTerm.toLowerCase());
         }
         return true;
-    }).toSorted((a, b) => {
+    }).sort((a, b) => {
         return a.nombre.localeCompare(b.nombre);
     });
 

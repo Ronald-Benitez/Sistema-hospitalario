@@ -1,7 +1,8 @@
+"use client"
+
 import NavbarBase from "@/app/components/navbars/navbar"
 import checkUserRole from "@/app/middlewares/check-user-role"
 
-export const dynamic = 'force-dynamic'
 
 function page() {
 
