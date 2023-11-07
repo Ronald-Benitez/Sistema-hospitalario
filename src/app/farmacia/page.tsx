@@ -1,9 +1,7 @@
-import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
-import { cookies } from 'next/headers';
+"use server"
 
 import checkUserRole from "../middlewares/check-user-role";
 import NavbarBase from "../components/navbars/navbar";
-import HandleFiles from "./handleFiles";
 import Hotbar from "./hotbar";
 
 async function Farmacia() {
