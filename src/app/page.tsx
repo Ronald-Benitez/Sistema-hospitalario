@@ -1,4 +1,4 @@
-import NavbarBase from "@/app/components/navbars/navbar"
+import NavbarBase from "./components/navbars/navbar"
 
 export default function Home() {
 

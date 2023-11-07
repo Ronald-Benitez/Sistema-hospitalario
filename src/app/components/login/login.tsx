@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, Button, useDisclosure } from "@nextui-org/react";
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import toast, { Toaster } from 'react-hot-toast';
-import { SetLoginCookies, RemoveLoginCookies } from "@/app/actions/cookies";
+import { SetLoginCookies, RemoveLoginCookies } from "../../actions/cookies";
 import { useRouter } from 'next/navigation'
 
 import UsuarioSuspendido from "./usuario-suspendido";

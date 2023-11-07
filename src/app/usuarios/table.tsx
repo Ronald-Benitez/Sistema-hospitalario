@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import { Chip } from "@nextui-org/react";
 
 import { GetLoginCookies } from "../actions/cookies";
 import { User } from "../interfaces/user";
@@ -9,7 +10,6 @@ import SuspendUser from "./suspend";
 import EditUser from "./edit";
 import Pagination from "../components/utils/pagination";
 import SearchFilter from "../components/utils/filtering";
-import { Chip } from "@nextui-org/react";
 
 const ITEMS_PER_PAGE = 5; // Número de elementos por página
 

@@ -6,12 +6,12 @@ import toast, { Toaster } from "react-hot-toast";
 import { useDisclosure } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
 
-import PublicNavbar from "@/app/components/navbars/public-nav";
-import AdminNavbar from "@/app/components/navbars/admin-nav";
+import PublicNavbar from "./public-nav";
+import AdminNavbar from "./admin-nav";
 import SecretariaNavbar from "./secretaria-nav";
 import FarmaciaNavbar from "./farmacia-nav";
-import { GetLoginCookies, RemoveLoginCookies, SetLoginCookies } from "@/app/actions/cookies";
-import { type User } from "@/app/interfaces/user";
+import { GetLoginCookies, RemoveLoginCookies, SetLoginCookies } from "../../actions/cookies";
+import { type User } from "../../interfaces/user";
 import UsuarioSuspendido from "../login/usuario-suspendido";
 
 export default function NavbarBase() {

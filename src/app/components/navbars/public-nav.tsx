@@ -1,5 +1,5 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
-import Login from "@/app/components/login/login";
+import Login from "../login/login";
 
 export default function PublicNavbar() {
 

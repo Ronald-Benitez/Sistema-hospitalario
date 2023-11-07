@@ -3,9 +3,9 @@
 import { Button } from "@nextui-org/react";
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import toast, { Toaster } from 'react-hot-toast';
-import { RemoveLoginCookies } from "@/app/actions/cookies";
+import { RemoveLoginCookies } from "../../actions/cookies"
 import { useRouter } from 'next/navigation'
-import Confirm from "@/app/components/utils/confirm";
+import Confirm from "../../components/utils/confirm";
 
 export default function LogOut() {
     const client = createClientComponentClient();

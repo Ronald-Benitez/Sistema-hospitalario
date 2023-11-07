@@ -6,9 +6,9 @@ import { IconTrashFilled } from "@tabler/icons-react";
 import toast, { Toaster } from "react-hot-toast";
 
 import Pagination from "@/app/components/utils/pagination";
-import SearchFilter from "@/app/components/utils/filtering";
+import SearchFilter from "../components/utils/filtering";
 import moment from "moment/moment";
-import { type Speciality } from "@/app/interfaces/specialities";
+import { type Speciality } from "../interfaces/specialities";
 import AddSpeciality from "./add";
 import Confirm from "../components/utils/confirm";
 import { deleteEspeciality } from "../actions/specialities";
